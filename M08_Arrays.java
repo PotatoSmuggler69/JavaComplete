@@ -77,3 +77,14 @@ class Headphones{
         System.out.println("Model : "+model);
     }
 }
+
+// Example
+
+/// Create a class called students
+// String name
+// long roll
+// double marks
+
+//take 10 inputs
+
+// find the name of the student with the highest marks
