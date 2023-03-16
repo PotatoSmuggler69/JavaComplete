@@ -41,9 +41,10 @@
         c++ --> 1ms (compiled) [OS,software that is very close to hardware,Game dev]
         java,C# --> 3ms (compiled + interpreted) (Server side Language/ Back End, Security is the priority)
         python --> 5ms (interpreted) [Lekha kom] (data processing, AI, ML,Analysis)
+
 */
 
-public class M01_Basics{
+ class M01_Basics{
     public static void main(String[] args) {
         Students st1 = new Students("Moida", 14, 4);
         Students st2 = new Students("Sandipan", 51, 56);
@@ -51,7 +52,7 @@ public class M01_Basics{
     }
 }
 
-class Students{
+ class Students{
     // object level variable
     // this --> is the referece/address of the object that is created
     String name;

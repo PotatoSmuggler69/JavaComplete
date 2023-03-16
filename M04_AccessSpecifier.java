@@ -14,7 +14,7 @@
 */
 
 
-public class M04_AccessSpecifier {
+class M04_AccessSpecifier {
     
     public static void main(String[] args) {
         Students objx = new Students("Arpan",20,30);
