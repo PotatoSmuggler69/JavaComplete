@@ -17,7 +17,7 @@ import java.util.Arrays;
 public class M10_Sorting {
     public static void main(String[] args) {
         int[] arr = new int[]{3,2,5,1,7,10,9,7};
-        new M10_Sorting().insertion_sort(arr);
+        new M10_Sorting().quick_sort(arr);
         System.out.println(Arrays.toString(arr));
     }
     
@@ -62,6 +62,47 @@ public class M10_Sorting {
                 j--;
             }
         }
+    }
+
+
+    void quick_sort(int[] arr){
+        //<starding_index> ; <arr> ; <ending_index>
+        quick_sort_recursion(0,arr,arr.length-1);
+
+    }
+    void quick_sort_recursion(int s,int[] arr,int e){
+        //base case
+        if(s>=e) return;
+
+
+        //segment ----> arranging the pivot in the correct position
+        int p = segment(s,arr,e);
+        //left side
+        quick_sort_recursion(s, arr, p-1);
+        //right side
+        quick_sort_recursion(p+1, arr, e);
+
+    }
+
+    int segment(int s,int[] arr,int e){
+        int pivot = arr[e];
+        int count = s;
+
+        for(int j=s;j<e;j++){
+            if(pivot>arr[j]){
+                count++;
+                int temp = arr[j];
+                arr[j] = arr[count-1];
+                arr[count-1] = temp;
+            }
+        }
+        //swapping the pivot
+        int temp = arr[e];
+        arr[e] = arr[count];
+        arr[count] = temp;
+
+
+        return count;
     }
 
 
