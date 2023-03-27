@@ -3,14 +3,20 @@
  *      Some of the most commonly used non access specifiers are:
  *      
  *          1. static (GAND FARD IMP QUES) --> 1) this keyword is used for making a 
- *                                              function or a variable "class level".
- *                                              
- *                                              2) If a function or a variable is of 
- *                                                 class level then we can access those by using the 
- *                                                 name of the class without creating an object.
+ *                       USED WITH                function or a variable "class level".
+ *                  1. Blocks                            
+ *                  2. Variables               2) If a function or a variable is of 
+ *                  3. Functions                  class level then we can access those by using the 
+ *                  4. Class                      name of the class without creating an object.
  * 
- *                                              3) This is loaded within the memory block of the 
- *                                                  memory area of the execution engine.
+ *                                              3) This is loaded within the method block of the 
+ *                                                 memory area of the execution engine.
+ * 
+ *                                              4) A static method can be overloaded but not 
+ *                                                 overridded
+ *          
+ *                                              5) Cannot be used in object level or 
+ *                                                 instance functions
  *                                               
  *          2. final ------------------------> 1) this keyword can be used with a variable,function
  *                                                and class.
@@ -19,7 +25,7 @@
  *                                                             changed.
  *                                              
  *                                             3) function --> then that function cannot be 
- *                                                              overloaded /overridden
+ *                                                              overridden
  *                                              
  *                                             4) class --> cannot be inherited
  * 
@@ -41,7 +47,7 @@
  *                  --> NO
  *          
  *          (NOT SO IMPORTANT)
- *          4. synchronous -------------------->    1) This keyword is used in multi-threading.
+ *          4. synchronized -------------------->    1) This keyword is used in multi-threading.
  *                                                      
  *                                                  2) This is only used with functions.
  * 
